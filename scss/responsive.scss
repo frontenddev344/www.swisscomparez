@@ -94,12 +94,25 @@
     section.offers .offers-wrapper p {
         font-size: 16px;
     }
+
     section.adventure .adventure-text h3 {
         font-size: 30px;
     }
+
     section.adventure .adventure-text p {
         font-size: 16px;
 
+    }
+
+    .swisscomparez {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .bottom-footer ul.trem1 {
+        display: flex;
+        justify-content: center;
+        margin: 0;
     }
 }
 
@@ -107,9 +120,12 @@
     section.site-bnr .bnr-inner .bnr-text h1 {
         font-size: 50px;
     }
+
     section.site-bnr.hotels .bnr-inner .bnr-text h1 {
         font-size: 30px;
     }
+
+
 }
 
 @media (max-width:575px) {
@@ -117,13 +133,26 @@
         width: 80%;
     }
 
+    .bottom-footer ul.trem1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bottom-footer ul.trem1 li a {
+      
+        padding: 0px 0 18px 20px;
+        display: block;
+    }
+
     section.site-bnr .bnr-inner .bnr-text h1 {
         font-size: 30px;
     }
+
     section.site-bnr.hotels.Retuarants {
         height: 400px;
         object-fit: cover;
     }
+
     section.site-bnr.hotels {
         height: 400px;
         object-fit: cover;
