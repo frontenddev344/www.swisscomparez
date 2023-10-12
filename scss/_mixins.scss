@@ -1,0 +1,114 @@
+@mixin flexpro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin site-bnr {
+    background: url(../images/hero-banner.jpg)no-repeat;
+    background-size: cover;
+    padding: 140px 0;
+    position: relative;
+    z-index: 1;
+    height: 900px;
+}
+
+@mixin site-after {
+    position: absolute;
+    background-color: #2a2a2a;
+    content: '';
+    inset: 0;
+    height: 100%;
+    opacity: .35;
+    width: 100%;
+    z-index: -1;
+}
+
+@mixin homepageheading {
+    font-size: 70px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: 20px;
+    color: $primary-color;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin parahomebnr {
+    font-size: 18px;
+    color: $primary-color;
+    font-weight: 400px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 800px;
+    line-height: 32px;
+}
+
+@mixin site-btn {
+    background-color: $site-btn;
+    padding: 11px 44px;
+    color: $primary-color;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s;
+    font-weight: 400;
+}
+
+// gaming
+@mixin gamingbnr {
+    background: url(../images/Gaming.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin contact-a-s {
+    position: relative;
+    padding-left: 68px;
+    margin-bottom: 10px;
+}
+
+@mixin mail {
+    content: '\f003';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-family: 'FontAwesome';
+    background-color: $social;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin number {
+    content: '\f095';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-family: 'FontAwesome';
+    background-color: $social;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin location {
+    content: '\f041 ';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-family: 'FontAwesome';
+    background-color: $social;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import "variable";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+// header css
+header.header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+
+    .header-wrapper {
+        .header-inner {
+            @include flexpro;
+
+            .logo {
+                img {
+                    max-width: 240px;
+                }
+            }
+
+            .site-menu {
+                ul {
+                    display: flex;
+                    margin: 0;
+
+                    li {
+                        padding: 0 0px 0 22px;
+
+                        a {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            color: $primary-color;
+                            font-weight: 400;
+                            padding: 10px;
+                            transition: all 0.3s ease-in;
+
+                            &:hover {
+                                color: $yellow;
+                            }
+
+                            &.active {
+                                color: $yellow;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// 
+.toggle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+.toggle span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: $primary-color;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+}
+
+.toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+
+.toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(60px);
+}
+
+// header css
+// Banner css
+section.site-bnr {
+    @include site-bnr;
+
+    &::after {
+        @include site-after;
+    }
+
+    .bnr-inner {
+        .bnr-text {
+            padding-top: 140px;
+
+            h1 {
+                @include homepageheading;
+            }
+
+            p {
+                @include parahomebnr;
+            }
+        }
+    }
+}
+
+// Banner css
+// switzerland css
+section.switzerland {
+    padding: 80px 0;
+
+    .switzerland-img {
+        height: 570px;
+        width: 100%;
+        max-width: 570px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            margin: 20px 0;
+            line-height: 32px;
+        }
+    }
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 100px;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .switzerland-text {
+        h3 {
+            font-size: 40px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 50px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            margin: 20px 0;
+            line-height: 32px;
+        }
+    }
+}
+
+// 
+section.offers {
+    background: url(../images/bg.jpg)no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+
+    .offers-wrapper {
+        .row {
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: $primaryblack;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: $primaryblack;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 32px;
+            max-width: 500px;
+        }
+
+    }
+
+    .exklusive.one {
+        background: $primary-color;
+        padding: 30px 40px;
+        position: relative;
+        margin: 0 0 0 -60px;
+        border: 1px solid black;
+    }
+
+    .offers-wrapper.one {
+        margin-top: 70px;
+    }
+}
+
+
+// 
+section.adventure {
+    background: url(../images/adventure.jpg);
+    padding: 120px 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    margin-top: 80px;
+
+    &::after {
+        position: absolute;
+        background-color: $para-color;
+        content: '';
+        inset: 0;
+        height: 100%;
+        opacity: .35;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .adventure-text {
+        h3 {
+            font-size: 40px;
+            color: $primary-color;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            color: $primary-color;
+            font-weight: 500;
+            width: 100%;
+            max-width: 791px;
+            line-height: 32px;
+        }
+    }
+}
+
+// 
+footer {
+    background-color: $site-btn;
+    padding: 50px 0 20px 0;
+
+    .footer-logo {
+        img {
+            max-width: 280px;
+        }
+
+        p {
+            color: $primary-color;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            margin: 20px 0 0 0;
+            flex-wrap: wrap;
+
+            li {
+                margin: 0 14px 0 0;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    background-color: $social;
+                    color: $primary-color;
+                    font-size: 20px;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        background-color: $yellow;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer-menu {
+        h3 {
+            color: $primary-color;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                a {
+                    color: $primary-color;
+                    font-size: 16px;
+                    padding: 10px 0;
+                    display: block;
+
+                    i {
+
+                        padding: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-menu.one {
+        ul {
+
+            li {
+                a {
+                    color: $primary-color;
+                    padding: 10px 0;
+                    display: block;
+                    font-size: 16px;
+
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-menu.contact {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+
+                a.mail {
+                    @include contact-a-s;
+
+                    &::after {
+                        @include mail;
+                    }
+                }
+
+                a.number {
+                    @include contact-a-s;
+
+                    &::after {
+                        @include number;
+                    }
+                }
+
+                a.location {
+                    position: relative;
+                    padding-left: 68px;
+
+                    &::after {
+                        @include location;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+// 
+.bottom-footer {
+    background-color: $social;
+    padding: 20px 0;
+
+    .swisscomparez p {
+        margin: 0;
+        color: $primary-color;
+        font-size: 18px;
+    }
+
+    ul.trem1 {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+
+        li {
+            a {
+                color: $primary-color;
+                padding: 0 0 0 20px;
+                font-size: 16px;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+// Hotel page
+
+section.site-bnr.hotels {
+    background: url(../images/hotel.avif)no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    .bnr-inner {
+
+        .bnr-text {
+            padding: 0;
+
+            h1 {
+                text-align: center;
+                width: 100%;
+                max-width: 100%;
+                font-weight: 500;
+                font-size: 55px;
+            }
+        }
+    }
+}
+
+section.hotels-wrapper {
+    .hotels-cards {
+        .hotels-text {
+            margin: 50px 0;
+
+            p {
+
+                color: #677F8B;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.8;
+                box-shadow: 0 0 7px rgb(255 225 101 / 80%);
+                padding: 20px;
+            }
+        }
+    }
+}
+
+section.hotels-wrapper {
+    padding: 0 0 60px 0;
+
+    .wrapper-row.one {
+        margin-top: 40px;
+    }
+
+    .hotelsimg img {
+        height: 277px;
+        object-fit: cover;
+    }
+
+    .hotels-box {
+        height: 100%;
+        background: $primary-color;
+        box-shadow: 0 0 7px rgb(255 225 101 / 39%);
+        padding: 10px;
+    }
+
+    .hotelsimg-text {
+        padding: 20px;
+    }
+
+    .hotelsimg-text h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .hotelsimg-text h6 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $yellow;
+    }
+
+    .hotelsimg-text h6 span {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primaryblack;
+
+    }
+
+    .card-btn a {
+        @include site-btn;
+    }
+
+    .card-btn a:hover {
+        background-color: #ffcd00;
+
+    }
+
+}
+
+section.site-bnr.hotels.Retuarants {
+    background: url(../images/Retuarants.jpg);
+    background-position: center;
+}
+
+section.hotels-wrapper .hotels-cards .hotels-text.one {
+    margin-bottom: 0;
+}
+
+// outdoor
+section.site-bnr.hotels.outdoor {
+    background: url(../images/outdoor.cms);
+    background-position: center
+}
+
+.wrapper-row-one.billborad {
+    margin-top: 40px;
+}
+
+.wrapper-row-one {
+    background-color: $primary-color;
+    padding: 10px;
+    box-shadow: 0 0 7px rgba(255, 225, 101, 0.8);
+
+    .row {
+        align-items: center;
+
+        .text-jung {
+            h3 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                color: $primaryblack;
+                font-weight: 600;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #677F8B;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.8;
+                margin: 0;
+            }
+
+            .out-btn {
+                a {
+                    @include site-btn;
+                }
+            }
+        }
+    }
+
+}
+
+// gaming
+
+section.site-bnr.hotels.gaming {
+    @include gamingbnr;
+}
+
+body#gaming .wrapper-row-one .jungfrauj-img img {
+    height: 250px;
+    object-fit: cover;
+}
+
+body#gaming .wrapper-row-one {
+    padding: 20px !important;
+
+    .out-btn {
+        text-align: center;
+
+        a {
+            @include site-btn;
+        }
+    }
+}
+
+section.site-bnr.hotels.contact {
+    background: url(../images/contact-us.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// 
+body#contact section.hotels-wrapper {
+    padding: 0;
+}
+
+section.contact-detail {
+    padding-bottom: 50px;
+
+    .kontaktdaten {
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: $para-color;
+            line-height: 32px;
+
+            a {
+                color: #ffcd00;
+            }
+        }
+
+        .sozialen {
+            a {
+                color: #ffcd00;
+
+            }
+
+
+        }
+
+        h5 {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+// 
+section.site-bnr.hotels.trem {
+    background: url(../images/terms.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// 
+section.site-bnr.hotels.privacy {
+    background: url(../images/privacy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.distcription {
+    padding: 80px 0;
+
+    .text-discri {
+        h5 {
+            font-weight: 600;
+            font-size: 22px;
+            color: $primaryblack;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+    }
+}
