@@ -88,28 +88,24 @@ header.header {
     overflow: hidden;
     display: none;
 }
-
 .toggle span {
     position: absolute;
     width: 40px;
     height: 4px;
     background: $primary-color;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
-
 .toggle span:nth-child(1) {
     transform: translateY(-15px);
     width: 25px;
     left: 15px;
 }
-
 .toggle.active span:nth-child(1) {
     width: 40px;
     transform: translateY(0) rotate(45deg);
     transition-delay: 0.125s;
 }
-
 .toggle span:nth-child(2) {
     transform: translateY(15px);
     width: 15px;

@@ -78,7 +78,7 @@ header.header .header-wrapper .header-inner .site-menu ul li a.active {
   height: 4px;
   background: #fff;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .toggle span:nth-child(1) {
