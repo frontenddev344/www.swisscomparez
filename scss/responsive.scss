@@ -114,18 +114,14 @@
         justify-content: center;
         margin: 0;
     }
-}
-
+}   
 @media (max-width:767px) {
     section.site-bnr .bnr-inner .bnr-text h1 {
         font-size: 50px;
     }
-
     section.site-bnr.hotels .bnr-inner .bnr-text h1 {
         font-size: 30px;
     }
-
-
 }
 
 @media (max-width:575px) {
