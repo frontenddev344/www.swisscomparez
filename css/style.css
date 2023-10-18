@@ -420,6 +420,9 @@ section.site-bnr.hotels .bnr-inner .bnr-text h1 {
 section.hotels-wrapper .hotels-cards .hotels-text {
   margin: 50px 0;
 }
+section.hotels-wrapper .hotels-cards .hotels-text h3 {
+  margin-bottom: 20px;
+}
 section.hotels-wrapper .hotels-cards .hotels-text p {
   color: #677F8B;
   font-size: 18px;
