@@ -172,6 +172,9 @@
         height: 400px;
         object-fit: cover;
     }
+    section.site-bnr.hotels.outdoor {
+        background-position: 30%, 0;
+    }
 }
 
 @media (max-width:362px) {
