@@ -621,6 +621,11 @@ section.contact-detail .kontaktdaten .sozialen a {
   padding: 12px 50px;
   text-transform: capitalize;
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+section.contact-detail .kontaktdaten .sozialen a:hover {
+  background-color: #ffcd00;
+  color: #fff;
 }
 section.contact-detail .kontaktdaten h5 {
   margin-top: 20px;

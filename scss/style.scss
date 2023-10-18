@@ -604,19 +604,21 @@ section.site-bnr.hotels.outdoor {
             .out-btn {
                 a {
                     @include site-btn;
-                &:hover{
-                    background-color: #ffcd00;
-                }
+
+                    &:hover {
+                        background-color: #ffcd00;
+                    }
                 }
             }
         }
-        .jungfrauj-img{
+
+        .jungfrauj-img {
             overflow: hidden;
 
-            & img:hover{
+            & img:hover {
                 transform: scale(1.2);
                 transition: all 0.3s ease-in-out;
-                
+
             }
         }
     }
@@ -643,9 +645,9 @@ body#gaming .wrapper-row-one {
         a {
             @include site-btn;
 
-        &:hover{
-            background-color: #ffcd00;
-        }
+            &:hover {
+                background-color: #ffcd00;
+            }
         }
     }
 }
@@ -694,7 +696,12 @@ section.contact-detail {
                 padding: 12px 50px;
                 text-transform: capitalize;
                 font-weight: 700;
+                transition: all 0.3s ease-in-out;
 
+                &:hover {
+                    background-color: #ffcd00;
+                    color: #fff;
+                }
             }
 
 
