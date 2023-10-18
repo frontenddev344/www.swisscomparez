@@ -519,7 +519,7 @@ section.hotels-wrapper {
         font-size: 24px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: $yellow;
+        color: #ffcd00;
     }
 
     .hotelsimg-text h6 span {
@@ -651,6 +651,7 @@ section.contact-detail {
 
             a {
                 color: #ffcd00;
+                font-weight: 700;
             }
         }
 
@@ -664,6 +665,7 @@ section.contact-detail {
                 border: 1px solid;
                 padding: 12px 50px;
                 text-transform: capitalize;
+                font-weight: 700;
 
             }
 
@@ -725,7 +727,7 @@ $background-color_3: #4070f4;
     right: -370px;
     max-width: 345px;
     width: 100%;
-    background: #000;   
+    background: #000;
     border-radius: 8px;
     padding: 15px 25px 22px;
     transition: right 0.3s ease;
