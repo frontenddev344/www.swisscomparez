@@ -105,6 +105,9 @@
   section.site-bnr.hotels .bnr-inner .bnr-text h1 {
     font-size: 30px;
   }
+  a.instagram {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 575px) {
   header.header .header-wrapper .header-inner .site-menu ul.navigation_link {
@@ -129,6 +132,11 @@
   section.site-bnr.hotels {
     height: 400px;
     object-fit: cover;
+  }
+}
+@media (max-width: 362px) {
+  a.twitter {
+    margin-top: 20px;
   }
 }
 
