@@ -540,6 +540,16 @@ section.site-bnr.hotels.outdoor {
   transition: all 0.3s;
   font-weight: 400;
 }
+.wrapper-row-one .row .text-jung .out-btn a:hover {
+  background-color: #ffcd00;
+}
+.wrapper-row-one .row .jungfrauj-img {
+  overflow: hidden;
+}
+.wrapper-row-one .row .jungfrauj-img img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
 
 section.site-bnr.hotels.gaming {
   background: url(../images/Casino-banner.jpeg);
@@ -567,6 +577,9 @@ body#gaming .wrapper-row-one .out-btn a {
   margin-top: 20px;
   transition: all 0.3s;
   font-weight: 400;
+}
+body#gaming .wrapper-row-one .out-btn a:hover {
+  background-color: #ffcd00;
 }
 
 section.site-bnr.hotels.contact {
