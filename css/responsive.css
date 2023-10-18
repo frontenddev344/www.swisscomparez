@@ -111,6 +111,9 @@
   a.instagram {
     margin-top: 20px;
   }
+  .wrapper .buttons {
+    max-width: 77%;
+  }
 }
 @media (max-width: 575px) {
   header.header .header-wrapper .header-inner .site-menu ul.navigation_link {
@@ -143,6 +146,9 @@
 @media (max-width: 362px) {
   a.twitter {
     margin-top: 20px;
+  }
+  .wrapper .buttons {
+    max-width: 100%;
   }
 }
 

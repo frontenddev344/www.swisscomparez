@@ -669,7 +669,7 @@ section.site-bnr.hotels.privacy {
   background: #364a59;
   bottom: 0;
   padding: 15px 25px 22px;
-  transition: right 0.3s ease;
+  transition: right 0.6s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
@@ -695,7 +695,7 @@ section.site-bnr.hotels.privacy {
 }
 
 .wrapper.show {
-  right: 20px;
+  right: 0px;
 }
 .wrapper.show h2 {
   color: #fff;

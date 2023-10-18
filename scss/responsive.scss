@@ -144,6 +144,11 @@
     a.instagram {
         margin-top: 20px;
     }
+
+    .wrapper .buttons {
+
+        max-width: 77%;
+    }
 }
 
 @media (max-width:575px) {
@@ -185,5 +190,10 @@
 @media (max-width:362px) {
     a.twitter {
         margin-top: 20px;
+    }
+
+    .wrapper .buttons {
+
+        max-width: 100%;
     }
 }
