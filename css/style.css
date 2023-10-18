@@ -532,7 +532,7 @@ section.site-bnr.hotels.outdoor {
 }
 
 section.site-bnr.hotels.gaming {
-  background: url(../images/Gaming.avif);
+  background: url(../images/Casino-banner.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -586,8 +586,16 @@ section.contact-detail .kontaktdaten p {
 section.contact-detail .kontaktdaten p a {
   color: #ffcd00;
 }
+section.contact-detail .kontaktdaten .sozialen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 section.contact-detail .kontaktdaten .sozialen a {
   color: #ffcd00;
+  border: 1px solid;
+  padding: 12px 50px;
+  text-transform: capitalize;
 }
 section.contact-detail .kontaktdaten h5 {
   margin-top: 20px;
