@@ -441,6 +441,7 @@ footer {
         }
     }
 }
+
 // Hotel page
 section.site-bnr.hotels {
     background: url(../images/Hotel-banner.jpeg)no-repeat;
@@ -495,9 +496,18 @@ section.hotels-wrapper {
         margin-top: 40px;
     }
 
+    .hotelsimg {
+        overflow: hidden;
+    }
+
     .hotelsimg img {
         height: 277px;
         object-fit: cover;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease-in-out;
+        }
     }
 
     .hotels-box {

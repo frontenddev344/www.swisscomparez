@@ -438,9 +438,16 @@ section.hotels-wrapper {
 section.hotels-wrapper .wrapper-row.one {
   margin-top: 40px;
 }
+section.hotels-wrapper .hotelsimg {
+  overflow: hidden;
+}
 section.hotels-wrapper .hotelsimg img {
   height: 277px;
   object-fit: cover;
+}
+section.hotels-wrapper .hotelsimg img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
 }
 section.hotels-wrapper .hotels-box {
   height: 100%;
