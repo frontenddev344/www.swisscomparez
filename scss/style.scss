@@ -560,6 +560,7 @@ section.site-bnr.hotels.Restaurants {
 section.hotels-wrapper .hotels-cards .hotels-text.one {
     margin-bottom: 0;
 }
+
 // outdoor
 section.site-bnr.hotels.outdoor {
     background: url(../images/Outdoor-banner.jpeg);
@@ -569,6 +570,7 @@ section.site-bnr.hotels.outdoor {
 .wrapper-row-one.billborad {
     margin-top: 40px;
 }
+
 .wrapper-row-one {
     background-color: $primary-color;
     padding: 10px;
@@ -622,14 +624,17 @@ section.site-bnr.hotels.outdoor {
     }
 
 }
+
 // gaming
 section.site-bnr.hotels.gaming {
     @include gamingbnr;
 }
+
 body#gaming .wrapper-row-one .jungfrauj-img img {
     height: 250px;
     object-fit: cover;
 }
+
 body#gaming .wrapper-row-one {
     padding: 20px !important;
 
@@ -645,6 +650,7 @@ body#gaming .wrapper-row-one {
         }
     }
 }
+
 section.site-bnr.hotels.contact {
     background: url(../images/contact-us.avif);
     background-size: cover;
@@ -746,11 +752,11 @@ section.site-bnr.hotels.privacy {
 .wrapper {
     position: fixed;
     bottom: 50px;
-    right: -370px;
-    max-width: 345px;
+    right: -100%;
+    max-width: 100%;
     width: 100%;
     background: #364a59;
-    border-radius: 8px;
+    bottom: 0;
     padding: 15px 25px 22px;
     transition: right 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -777,6 +783,7 @@ section.site-bnr.hotels.privacy {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 40%;
     }
 }
 

@@ -663,11 +663,11 @@ section.site-bnr.hotels.privacy {
 .wrapper {
   position: fixed;
   bottom: 50px;
-  right: -370px;
-  max-width: 345px;
+  right: -100%;
+  max-width: 100%;
   width: 100%;
   background: #364a59;
-  border-radius: 8px;
+  bottom: 0;
   padding: 15px 25px 22px;
   transition: right 0.3s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -691,6 +691,7 @@ section.site-bnr.hotels.privacy {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 40%;
 }
 
 .wrapper.show {
