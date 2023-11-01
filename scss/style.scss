@@ -467,26 +467,25 @@ section.site-bnr.hotels {
     }
 }
 
-section.hotels-wrapper {
+.hotels-wrapper {
     .hotels-cards {
         .hotels-text {
             margin: 50px 0;
-
             h3 {
                 margin-bottom: 20px;
             }
-
-            p {
-
-                color: #677F8B;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 1.8;
-                box-shadow: 0 0 7px rgb(255 225 101 / 80%);
-                padding: 20px;
-            }
+            
         }
     }
+}
+
+.hotels-text p {
+    color: #677F8B;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    box-shadow: 0 0 7px rgb(255 225 101 / 80%);
+    padding: 20px;
 }
 
 section.hotels-wrapper {
@@ -856,4 +855,13 @@ header {
         background-color: #ffcd00;
         color: $color_3;
     }
+}
+
+// new updates
+
+.hotels-text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
 }

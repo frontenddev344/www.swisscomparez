@@ -68,7 +68,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\a         on line 487 of E:Tufang Singhswizzcomparezpublicscssstyle.scss\a\a 482: .hotels-text p {\a 483:     color: #677F8B;\a 484:     font-size: 18px;\a 485:     font-weight: 400;\a 486:     line-height: 1.8;\a 487:     box-shadow: 0 0 7px rgb(255 225 101 / 80%);\a 488:     padding: 20px;\a 489: }\a 490: \a 491: section.hotels-wrapper {\a 492:     padding: 0 0 60px 0;";
-}
-
-/*# sourceMappingURL=style.css.map */
+  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 487 of E:\Tufang Singh\swizzcomparez\public\scss\style.scss\A \A 482: .hotels-text p {\A 483:     color: #677F8B;\A 484:     font-size: 18px;\A 485:     font-weight: 400;\A 486:     line-height: 1.8;\A 487:     box-shadow: 0 0 7px rgb(255 225 101 / 80%);\A 488:     padding: 20px;\A 489: }\A 490: \A 491: section.hotels-wrapper {\A 492:     padding: 0 0 60px 0;"; }

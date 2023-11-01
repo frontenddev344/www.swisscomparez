@@ -1,19 +1,17 @@
 @media (max-width: 1199px) {
   section.site-bnr {
     padding: 145px 0;
-    height: auto;
-  }
+    height: auto; }
+
   section.site-bnr .bnr-inner .bnr-text {
-    padding-top: 0px;
-  }
+    padding-top: 0px; }
+
   header.header .header-wrapper .header-inner .site-menu ul li {
-    padding: 0 0px 0 0px;
-  }
-}
+    padding: 0 0px 0 0px; } }
 @media (max-width: 991px) {
   header.header .header-wrapper .header-inner .toggle {
-    display: flex !important;
-  }
+    display: flex !important; }
+
   header.header .header-wrapper .header-inner .site-menu ul.navigation_link {
     visibility: hidden;
     opacity: 0;
@@ -26,131 +24,122 @@
     align-items: self-start;
     height: 100vh;
     justify-content: flex-start;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     transform: translateX(-700px);
-    z-index: 9999999;
-  }
+    z-index: 9999999; }
+
   ul.navigation_link.mobile-open {
     visibility: visible !important;
     opacity: 1 !important;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     transform: translateX(0px) !important;
     background: var(--black);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  }
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; }
+
   header.header .header-wrapper .header-inner .site-menu ul {
-    padding: 0;
-  }
+    padding: 0; }
+
   header.header .header-wrapper .header-inner .site-menu ul li a {
     padding: 20px;
     display: block;
-    color: #fff;
-  }
+    color: #fff; }
+
   .switzerland-text.one {
     display: flex;
-    flex-direction: column-reverse;
-  }
+    flex-direction: column-reverse; }
+
   section.switzerland .switzerland-img {
-    max-width: 100%;
-  }
+    max-width: 100%; }
+
   section.switzerland h2 {
     font-size: 30px;
-    margin-bottom: 32px;
-  }
+    margin-bottom: 32px; }
+
   section.switzerland .switzerland-text h3 {
     font-size: 30px;
-    margin-top: 18px;
-  }
+    margin-top: 18px; }
+
   .wrapper-row .row .col-lg-4:last-child {
-    margin-top: 40px;
-  }
+    margin-top: 40px; }
+
   .wrapper-row .row .col-lg-4:nth-child(2) {
-    margin-top: 40px;
-  }
+    margin-top: 40px; }
+
   section.offers .exklusive.one {
-    margin: 30px 0 0 0px;
-  }
+    margin: 30px 0 0 0px; }
+
   section.offers .offers-wrapper h3 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+
   section.offers .offers-wrapper p {
-    font-size: 16px;
-  }
+    font-size: 16px; }
+
   section.adventure .adventure-text h3 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+
   section.adventure .adventure-text p {
-    font-size: 16px;
-  }
+    font-size: 16px; }
+
   .swisscomparez {
     text-align: center;
-    margin-bottom: 20px;
-  }
+    margin-bottom: 20px; }
+
   .bottom-footer ul.trem1 {
     display: flex;
     justify-content: center;
-    margin: 0;
-  }
+    margin: 0; }
+
   section.adventure {
-    padding: 66px 0;
-  }
+    padding: 66px 0; }
+
   .footer-menu.one {
-    margin-top: 30px;
-  }
+    margin-top: 30px; }
+
   .wrapper-row-one .row .text-jung h3 {
-    margin-top: 20px;
-  }
-}
+    margin-top: 20px; } }
 @media (max-width: 767px) {
   section.site-bnr .bnr-inner .bnr-text h1 {
-    font-size: 50px;
-  }
+    font-size: 50px; }
+
   section.site-bnr.hotels .bnr-inner .bnr-text h1 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+
   a.instagram {
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
+
   .wrapper .buttons {
-    max-width: 77%;
-  }
-}
+    max-width: 77%; } }
 @media (max-width: 575px) {
   header.header .header-wrapper .header-inner .site-menu ul.navigation_link {
-    width: 80%;
-  }
+    width: 80%; }
+
   .bottom-footer ul.trem1 {
     display: flex;
     align-items: center;
-    flex-direction: column;
-  }
+    flex-direction: column; }
+
   .bottom-footer ul.trem1 li a {
     padding: 0px 0 18px 20px;
-    display: block;
-  }
+    display: block; }
+
   section.site-bnr .bnr-inner .bnr-text h1 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+
   section.site-bnr.hotels.Retuarants {
     height: 400px;
-    object-fit: cover;
-  }
+    object-fit: cover; }
+
   section.site-bnr.hotels {
     height: 400px;
-    object-fit: cover;
-  }
+    object-fit: cover; }
+
   section.site-bnr.hotels.outdoor {
-    background-position: 30%, 0;
-  }
-}
+    background-position: 30%, 0; } }
 @media (max-width: 362px) {
   a.twitter {
-    margin-top: 20px;
-  }
-  .wrapper .buttons {
-    max-width: 100%;
-  }
-}
+    margin-top: 20px; }
 
+  .wrapper .buttons {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=responsive.css.map */
